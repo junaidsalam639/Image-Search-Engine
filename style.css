@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 25px;
+}
+.container #form h1{
+    text-align: center;
+    margin: 15px;
+    padding: 8px;
+    color: crimson;
+}
+.container #form input{
+    width: 270px;
+    padding: 13px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    border: 1px solid crimson;
+}
+.container #form input:focus{
+    background-color: crimson;
+    color: #fff;
+}
+::placeholder{
+    font-size: 15px;
+    color:000;
+}
+
+.container #form button{
+    width: 120px;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 5%;
+}
+
+.container #form button:hover{
+    background-color: rgba(220, 20, 60, 0.801);
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main #search-result{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main #search-result img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 200px;
+    margin: 12px;
+    border-radius: 5%;
+}
+
+.main #show-more{
+    display: none;
+}
+.main #show-more button{
+    width: 140px;
+    padding: 14px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 12px;
+    margin-bottom: 16px;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 5%;
+}
+.main #show-more button:hover{
+    background-color: rgba(220, 20, 60, 0.801);
+    color: #fff;
+}
+
+
+
+
+
+@media (max-width:500px){
+    .container #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container #form input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container #form button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+        margin-bottom: 25px;
+    }
+    .container #form h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+
